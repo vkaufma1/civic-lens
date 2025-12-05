@@ -166,7 +166,7 @@ body {
   padding-bottom: 2rem;
 }
 
-header, main, footer, section {
+main, footer, section {
   padding: 1.25rem;
 }
 
@@ -254,18 +254,23 @@ body.dark-mode p {
   color: var(--watchdog-white);
 }
 
+header h1 {
+  color:  var(--watchdog-white);
+}
+
 h1 {
   font-family: var(--font-heading);
   font-size: 2rem;
-  color: var(--blue-bulletin);
   margin-bottom: 0.5rem;
 }
 
-.tagline {
-  font-family: var(--font-body);
+header .tagline {
   color: var(--story-subtitle);
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+}
+
+main .tagline,
+section .tagline {
+  color: var(--story-subtitle);
 }
 
 body.dark-mode .tagline {
@@ -399,6 +404,7 @@ a:focus {
   }
 
   header {
+    background-color: var(--blue-bulletin);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -520,10 +526,6 @@ a:focus {
       color: var(--truth-text);
     }
 
-    header, main, footer {
-      background-color: var(--watchdog-white);
-    }
-
     article {
       background-color: var(--watchdog-white);
       border-color: var(--story-subtitle);
@@ -540,9 +542,6 @@ a:focus {
       color: var(--watchdog-white);
     }
 
-    header, main, footer {
-      background-color: var(--truth-text);
-    }
 
     .tagline {
       color: var(--watchdog-white);
