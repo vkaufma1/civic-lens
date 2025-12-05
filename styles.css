@@ -168,6 +168,24 @@ header, main, footer, section {
   padding: 1.25rem;
 }
 
+header {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 2rem 1.5rem;
+  border-bottom: 4px solid var(--news-flash);
+}
+
+header h1 {
+  color: var(--watchdog-white);
+}
+
+header .tagline {
+  color: var(--watchdog-white);
+  opacity: 0.9;
+}
+
+
+
 section {
   margin-bottom: 2.5rem;
 }
@@ -340,6 +358,29 @@ a:focus {
 /* ///ADD/// large styles 920px */
 
 @media (min-width: 920px) {
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    margin-bottom: 0.2rem;
+  }
+
+  header .tagline {
+    margin-bottom: 0.2rem;
+  }
+
+  header > h1,
+  header > .tagline {
+    display: block;
+  }
+
+  header > h1 + .tagline {
+    margin-top: -0.5rem;
+  }
 
   body {
     display: flex;
