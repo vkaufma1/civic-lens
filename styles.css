@@ -107,22 +107,31 @@ body.dark-mode {
 header {
   background: var(--blue-bulletin);
   color: var(--watchdog-white);
-  padding: 2rem 0;
+  padding: 1.5rem 1.25rem 0.5rem;
   width: 100%;
+  position: relative;
 }
 
 header h1 {
   font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: .25rem;
 }
 
 header .tagline {
   color: var(--watchdog-white);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 .mobile-nav {
-  margin-top: 1rem;
+  margin-top: 0;
+  background-color: var(--blue-bulletin);
+}
+
+.main-nav {
+  background-color: var(--blue-bulletin);
+  padding: 0 1.25rem;
 }
 
 .menu-button {
@@ -130,14 +139,15 @@ header .tagline {
   width: 100%;
   background: var(--news-flash);
   color: var(--watchdog-white);
-  text-align: left;
-  padding: 0.5rem;
+  text-align: center;
   font-weight: bold;
   border-radius: 0.5rem;
+  text-transform: uppercase;
 }
 
 .menu {
-  margin-top: 1rem;
+  margin-top: 0;
+  padding: 0.5rem 0;
   display: none;
 }
 
@@ -150,88 +160,98 @@ header .tagline {
   color: var(--watchdog-white);
   padding: .5rem 0;
   text-align: left;
-}
-
-.menu a:hover,
-.menu a:focus {
-  text-decoration: underline;
+  font-size: 1rem;
 }
 
 /* ///ADD/// Global Layout Styles */
 
 body {
   font-family: var(--font-body);
-  background-color: var(--watchdog-white);
-}
-
-header {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  padding: 2rem 1.25rem;
-  box-sizing: border-box;
+  line-height: 1.6;
+  padding-bottom: 0;
 }
 
 main, footer, section {
   padding: 1.25rem;
 }
 
+main {
+  padding-top: 1.25rem;
+}
+
 section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+main > *, footer > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 blockquote.tagline {
   text-align: center;
-  margin: 2rem auto;
+  margin: 1.5rem auto 2.5rem;
   font-style: italic;
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
   max-width: 700px;
   line-height: 1.6;
+  color: var(--truth-text);
 }
 
 body.dark-mode blockquote.tagline {
-  color: var(--watchdog-white);
+  color: var(--truth-text);
 }
 
 #breaking-news {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 #breaking-news h2 {
   grid-column: 1 / -1;
+  margin-bottom: 0.5rem;
 }
 
 
 #breaking-news article {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  border-radius: 0;
+  padding: 1.25rem;
+  border-radius: 0.4;
   background-color: var(--news-flash);
   color: var(--watchdog-white);
   box-shadow: var(--shadow);
+  border: 1px solid var(--watchdog-white);
 }
 
 #breaking-news h3 {
-  text-decoration: underline;
+  text-decoration: none;
   margin-bottom: 0.5rem;
+  color: var(--watchdog-white);
+}
+
+#breaking-news p {
+  color: var(--watchdog-white);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  flex-grow: 1;
 }
 
 
 #breaking-news video {
   width: 100%;
-  height: auto;
+  max-height: 180px;
   display: block;
   border-radius: 0.25rem;
+  margin-top: 1rem;
 }
 
 #featured-articles {
   display: grid;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 #featured-articles h2{
@@ -239,22 +259,40 @@ body.dark-mode blockquote.tagline {
 }
 
 #featured-articles article {
-  padding: 0.85rem 1rem 2.5rem;
+  padding: 1rem;
   border-radius: .3rem;
-  box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: relative;
-  min-height: 150px;
+  box-shadow: none;
+  border: 1px solid var(--story-subtitle);
+  background-color: var(--article-bg);
+  min-height: 100px;
+  transition: var(--transition);
+}
+
+#featured-articles article:hover {
+  border-color: var(--news-flash);
+}
+
+.bodydark-mode #featured-articles article {
+  border-color: var(--story-subtitle);
+  background-color: var(--article-bg);
 }
 
 #featured-articles h3 {
   font-family: var(--font-heading);
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  color: var(--blue-bulletin);
 }
 
+body.dark-mode #featured-articles h3 {
+  color: var(--truth-text);
+}
+
+#featured-articles p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--truth-text);
+}
 
 #newsletter {
   background: var(--news-flash);
