@@ -184,8 +184,6 @@ header .tagline {
   opacity: 0.9;
 }
 
-
-
 section {
   margin-bottom: 2.5rem;
 }
@@ -324,14 +322,30 @@ body.dark-mode h3 {
 }
 
 footer {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
   text-align: center;
+  padding: 2rem 1rem;
   margin-top: 3rem;
 }
 
 footer p{
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  color: var(--truth-text);
+  color: var(--watchdog-white);
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+footer a{
+  color: var(--watchdog-white);
+  background: var(--news-flash);
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+footer a:hover {
+  opacity: 0.8;
 }
 
 body.dark-mode footer p{
