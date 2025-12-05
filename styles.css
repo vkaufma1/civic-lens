@@ -237,6 +237,13 @@ article video {
 
 /* ///ADD/// Global Text Styles */
 
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
 p {
   font-family: var(--font-body);
   color: var(--truth-text);
