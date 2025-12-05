@@ -215,7 +215,8 @@ body.dark-mode blockquote.tagline {
 #breaking-news {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.25rem;
+  gap: 1.75rem;
+  margin-bottom: 3rem;
 }
 
 #breaking-news h2 {
@@ -259,7 +260,8 @@ body.dark-mode blockquote.tagline {
 
 #featured-articles {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
 }
 
 #featured-articles h2{
@@ -309,9 +311,9 @@ body.dark-mode #featured-articles p {
 #newsletter {
   background: var(--news-flash);
   padding: 2.5rem 1.25rem;
-  color: var(--watchdog-white);
   border-radius: .4rem;
   box-shadow: var(--shadow);
+  margin-top: 3rem;
 }
 
 #newsletter h2, #newsletter p {
@@ -319,13 +321,15 @@ body.dark-mode #featured-articles p {
 }
 
 #newsletter form {
-  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.25rem;
 }
 
 #newsletter form > div {
-  width: 100%;
-  display: block;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #newsletter input[type="text"], 
@@ -487,7 +491,7 @@ footer p {
 
   #breaking-news {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   #featured-articles {
@@ -496,9 +500,7 @@ footer p {
   }
 
   #newsletter form {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
   }
 
   #newsletter form > div {
@@ -587,6 +589,18 @@ footer p {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 2rem;
+  }
+
+  #breaking-news {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  #breaking-news article {
+    padding: 1.25rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--watchdog-white);
+    box-shadow: var(--shadow);
   }
 
 }
