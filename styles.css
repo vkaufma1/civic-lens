@@ -176,4 +176,44 @@ body.dark-mode {
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
 
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--blue-bulletin);
+    padding: 1.5rem 2rem;
+  }
+
+  #menu-toggle,
+  .menu-button {
+    display: none;
+  }
+
+  .menu {
+    display: flex !important;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  .menu li {
+    margin: 0;
+  }
+
+  .menu a {
+    background-color: var(--news-flash);
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--watchdog-white);
+    display: inline-block;
+  }
+
+  .menu a:hover,
+  .menu a:focus {
+    background-color: var(--news-flash);
+    opacity: 0.85;
+  }
+
 }
