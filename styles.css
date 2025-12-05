@@ -197,6 +197,43 @@ blockquote.tagline {
   border-radius: 0.25rem;
 }
 
+#featured-articles {
+  display: grid;
+  gap: 1.25rem;
+}
+
+#featured-articles article {
+  background: var(--watchdog-white);
+  border: 1px solid var(--story-subtitle);
+  padding: 1rem;
+  border-radius: .3rem;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+#featured-articles h3 {
+  font-family: var(--font-heading);
+  margin-bottom: .4rem;
+}
+
+#featured-articles article::after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background: var(--story-subtitle);
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+#newsletter {
+  background: var(--news-flash);
+  padding: 2rem 1.25rem;
+  color: var(--watchdog-white);
+  border-radius: .4rem;
+  box-shadow: var(--shadow);
+}
+
 
 
 /* ///ADD/// Global Text Styles */
