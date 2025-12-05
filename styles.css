@@ -232,10 +232,26 @@ article video {
 
 
 #breaking-news article {
-  border: 6px solid var(--news-flash);
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: var(--watchdog-white);
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+}
+
+#breaking-news article h3 {
+  color: var(--watchdog-white);
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+#breaking-news article p {
+  color: var(--watchdog-white);
+}
+
+#breaking-news article video {
+  width: 100%;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
 }
 
 
