@@ -190,7 +190,7 @@ blockquote.tagline {
   line-height: 1.6;
 }
 
-body.dark-mode blockq.tagline {
+body.dark-mode blockquote.tagline {
   color: var(--watchdog-white);
 }
 
@@ -206,6 +206,7 @@ body.dark-mode blockq.tagline {
 
 
 #breaking-news article {
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 1rem;
