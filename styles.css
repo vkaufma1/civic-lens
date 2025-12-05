@@ -265,6 +265,24 @@ blockquote.tagline {
   font-weight: 700;
 }
 
+#newsletter form > div:first-of-type, 
+#newsletter form > div:nth-of-type(2) {
+  display: inline-block;
+  width: 50%;
+}
+
+#newsletter form > div:first-of-type {
+  margin-right: 5%;
+}
+
+#newsletter fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.75rem 1.5rem;
+}
+
+
+
 
 
 /* ///ADD/// Global Text Styles */
