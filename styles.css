@@ -236,6 +236,7 @@ article video {
   border-radius: 0.5rem;
   background-color: var(--news-flash);
   color: var(--watchdog-white);
+  border: none;
 }
 
 #breaking-news article h3 {
@@ -457,7 +458,7 @@ button[type="submit"]:focus {
   #breaking-news {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   #featured-articles {
@@ -510,7 +511,7 @@ button[type="submit"]:focus {
 
   #featured-articles {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   h1 {
