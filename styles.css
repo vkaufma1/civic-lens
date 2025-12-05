@@ -253,6 +253,12 @@ body.dark-mode blockq.tagline {
   box-shadow: var(--shadow);
 }
 
+#newsletter form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+}
+
 #newsletter input,
 #newsletter button {
   width: 100%;
@@ -263,6 +269,8 @@ body.dark-mode blockq.tagline {
 }
 
 #newsletter button {
+  grid-column: 1 / -1;
+  width: 100%;
   background: var(--blue-bulletin);
   color: var(--watchdog-white);
   font-weight: 700;
@@ -275,8 +283,12 @@ body.dark-mode blockq.tagline {
 }
 
 #newsletter fieldset {
-  display: flex;
-  flex-direction: column;
+  grid-column: 1 / -1;
+  border: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5rem;
 }
 
