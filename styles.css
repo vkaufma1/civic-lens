@@ -78,7 +78,7 @@ body.dark-mode {
   color: var(--watchdog-white);
 }
 #theme-toggle {
-  position: absolute;
+  position: relative;
   top: 1rem;
   right: 1rem;
   background-color: var(--watchdog-white);
