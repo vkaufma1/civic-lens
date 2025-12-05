@@ -153,6 +153,7 @@ header .tagline {
   display: block;
   color: var(--watchdog-white);
   padding: .5rem 0;
+  text-align: left;
 }
 
 .menu a:hover,
@@ -163,8 +164,7 @@ header .tagline {
 /* ///ADD/// Global Layout Styles */
 
 body {
-  margin: 0;
-  padding: 0;
+  font-family: var(--font-body);
   background-color: var(--watchdog-white);
 }
 
@@ -188,6 +188,13 @@ blockquote.tagline {
   margin: 1rem 0 2rem;
   font-style: italic;
   font-weight: 700;
+  font-size: 1.2rem;
+  max-width: 600px;
+  color: var(--truth-text);
+}
+
+body.dark-mode blockq.tagline {
+  color: var(--watchdog-white);
 }
 
 #breaking-news {
@@ -214,9 +221,8 @@ blockquote.tagline {
 
 #breaking-news video {
   width: 100%;
-  height: auto;
-  display: block;
   border-radius: 0.25rem;
+  margin-top: .5rem;
 }
 
 #featured-articles {
@@ -231,15 +237,8 @@ blockquote.tagline {
   border-radius: .3rem;
   box-shadow: var(--shadow);
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-#featured-articles h3 {
-  font-family: var(--font-heading);
-  margin-bottom: .4rem;
-}
 
 #featured-articles article::after {
   content: "";
@@ -274,21 +273,6 @@ blockquote.tagline {
   font-weight: 700;
 }
 
-#newsletter form > div:first-of-type, 
-#newsletter form > div:nth-of-type(2) {
-  display: inline-block;
-  width: 50%;
-}
-
-#newsletter form > div:first-of-type {
-  margin-right: 5%;
-}
-
-#newsletter fieldset {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.75rem 1.5rem;
-}
 
 
 
@@ -308,13 +292,6 @@ h3 {
   font-size: 1.1rem;
 }
 
-blockquote.tagline {
-  color: var(--truth-text);
-}
-
-body.dark-mode blockquote.tagline {
-  color: var(--watchdog-white);
-}
 
 
 /* ///ADD/// medium styles 620px */
@@ -322,14 +299,26 @@ body.dark-mode blockquote.tagline {
 @media (min-width: 620px) {
 
   #breaking-news {
-    display: grid;
+  
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    align-items: start;
   }
 
   #featured-articles {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #newsletter form > div:first-of-type,
+  #newsletter form > div:nth-of-type(2) {
+    display: inline-block;
+    width: 48%;
+  }
+
+  #newsletter form > div:first-of-type {
+    margin-right: 4%;
+  }
+
+  #newsletter fieldset {
+    grid-template-columns: repeat(3, 1fr);
   }
 
 }
@@ -388,7 +377,7 @@ body.dark-mode blockquote.tagline {
 
   .menu-button {display: none;}
   .menu {
-    display: flex;
+    display: flex !important;
     gap: 1rem;
   }
   .menu a {
