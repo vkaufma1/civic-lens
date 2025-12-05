@@ -230,9 +230,14 @@ article video {
   margin-top: 0.5rem;
 }
 
-.breaking-border {
-  border-top: 6px solid var(--news-flash);
+
+#breaking-news article {
+  border: 6px solid var(--news-flash);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--watchdog-white);
 }
+
 
 
 /* ///ADD/// Global Text Styles */
