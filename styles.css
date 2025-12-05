@@ -252,8 +252,6 @@ body.dark-mode blockq.tagline {
 #featured-articles article::after {
   content: "";
   width: 40%;
-  height: 2px;
-  background: var(--story-subtitle);
   position: absolute;
   bottom: 1rem;
   left: 1rem;
