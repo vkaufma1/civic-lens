@@ -116,6 +116,46 @@ body.dark-mode {
 
 /* ///ADD/// Navigation Styles */
 
+.mobile-nav {
+  background-color: var(--blue-bulletin);
+  padding: 1rem;
+  color: var(--watchdog-white);
+}
+
+.menu-button {
+  display: inline-block;
+  background: var(--watchdog-white);
+  color: var(--blue-bulletin);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.menu {
+  margin-top: 1rem;
+  display: none;
+}
+
+#menu-toggle:checked + .menu-button + .menu {
+  display: block;
+}
+
+.menu li {
+  margin-bottom: 0.5rem;
+}
+
+.menu a {
+  color: var(--watchdog-white);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.menu a:hover,
+.menu a:focus {
+  text-decoration: underline;
+}
+
 /* ///ADD/// Global Layout Styles */
 
 /* ///ADD/// Global Text Styles */
