@@ -214,12 +214,11 @@ body.dark-mode blockquote.tagline {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.75rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 #breaking-news h2 {
   grid-column: 1 / -1;
-  margin-bottom: 0.5rem;
 }
 
 
@@ -675,3 +674,17 @@ body {
   background: transparent !important;
   border: none !important;
 }
+
+#theme-toggle svg {
+  width: 32px;
+  height: 32px;
+}
+
+body.light-mode #theme-toggle svg path {
+  fill: var(--truth-text);
+}
+
+body.dark-mode #theme-toggle svg path {
+  fill: var(--watchdog-white);
+}
+
