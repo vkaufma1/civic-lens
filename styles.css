@@ -387,20 +387,6 @@ a:focus {
 
 @media (min-width: 920px) {
 
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  header h1 {
-    margin-bottom: 0.2rem;
-  }
-
-  header .tagline {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
 
   main, header, footer {
     width: 100%;
@@ -563,7 +549,6 @@ a:focus {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background-color: var(--blue-bulletin);
     padding: 1.5rem 2rem;
   }
 
