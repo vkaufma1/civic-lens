@@ -273,6 +273,19 @@ header h1 {
   margin-bottom: 1.5rem;
 }
 
+.welcome-quote {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: var(--truth-text);
+}
+
+body.dark-mode .welcome-quote {
+  color: var(--watchdog-white);
+}
+
 header .tagline {
   color: var(--watchdog-white);
   margin-bottom: 1rem;
