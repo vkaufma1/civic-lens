@@ -171,8 +171,12 @@ header, main, footer, section {
 header {
   background-color: var(--blue-bulletin);
   color: var(--watchdog-white);
-  padding: 2rem 1.5rem;
+  padding: 1.5rem;
   border-bottom: 4px solid var(--news-flash);
+}
+
+header nav {
+  margin-top: 1rem;
 }
 
 header h1 {
