@@ -220,6 +220,82 @@ article video {
 
 /* ///ADD/// Global Text Styles */
 
+p {
+  font-family: var(--font-body);
+  color: var(--truth-text);
+  margin-bottom: 1rem;
+}
+
+body.dark-mode p {
+  color: var(--watchdog-white);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--blue-bulletin);
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-family: var(--font-body);
+  color: var(--story-subtitle);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+body.dark-mode .tagline {
+  color: var(--watchdog-white);
+  opacity: 0.85;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--blue-bulletin);
+  margin-bottom: 1rem;
+}
+
+body.dark-mode h2 {
+  color: var(--watchdog-white);
+}
+
+h3{
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--blue-bulletin);
+}
+
+body.dark-mode h3 {
+  color: var(--watchdog-white);
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+footer p{
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--truth-text);
+}
+
+body.dark-mode footer p{
+  color: var(--watchdog-white);
+}
+
+a {
+  color: var(--story-subtitle);
+  text-decoration: none;
+}
+
+a:hover, 
+a:focus {
+  text-decoration: underline;
+}
+
 
 /* ///ADD/// medium styles 620px */
 
