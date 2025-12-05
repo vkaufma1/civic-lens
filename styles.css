@@ -158,6 +158,18 @@ header .tagline {
 
 /* ///ADD/// Global Layout Styles */
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  margin: 0;
+  padding: 2rem 1.25rem;
+  box-sizing: border-box;
+}
+
 main, footer, section {
   padding: 1.25rem;
 }
@@ -170,7 +182,7 @@ blockquote.tagline {
   text-align: center;
   margin: 1rem 0 2rem;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 #breaking-news {
@@ -181,7 +193,7 @@ blockquote.tagline {
 
 #breaking-news article {
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0;
   background-color: var(--news-flash);
   color: var(--watchdog-white);
   box-shadow: var(--shadow);
