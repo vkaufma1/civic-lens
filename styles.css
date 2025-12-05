@@ -158,6 +158,66 @@ body.dark-mode {
 
 /* ///ADD/// Global Layout Styles */
 
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+header, main, footer, section {
+  padding: 1.25rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+article {
+  background-color: var(--watchdog-white);
+  border: 1px solid var(--story-subtitle);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  margin-bottom: 1rem;
+}
+
+body.dark-mode article {
+  background-color: var(--truth-text);
+  border-color: var(--story-subtitle);
+}
+
+article h3{
+  font-family: var(--font-heading);
+  color: var(--blue-bulletin);
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  color: var(--truth-text);
+  font-size: 0.9rem;
+}
+
+body.dark-mode article p {
+  color: var(--watchdog-white);
+}
+
+#featured-articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+article video {
+  width: 100%;
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.breaking-border {
+  border-top: 6px solid var(--news-flash);
+}
+
 /* ///ADD/// Global Text Styles */
 
 
@@ -175,6 +235,8 @@ body.dark-mode {
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
+
+  @media (min-width: 920px) {
 
   .mobile-nav {
     display: flex;
@@ -215,5 +277,7 @@ body.dark-mode {
     background-color: var(--news-flash);
     opacity: 0.85;
   }
+
+}
 
 }
