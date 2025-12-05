@@ -296,6 +296,14 @@ footer {
   margin-top: 3rem;
 }
 
+footer ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
 footer p{
   color: var(--watchdog-white);
   opacity: 0.8;
@@ -313,6 +321,11 @@ footer a{
 
 footer a:hover {
   opacity: 0.8;
+}
+
+footer section {
+  margin-bottom: 1rem;
+  padding: 0;
 }
 
 body.dark-mode footer p{
