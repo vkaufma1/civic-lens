@@ -114,17 +114,6 @@ header {
   z-index: 10;
 }
 
-#theme-toggle {
-  top: 1.5rem;
-  right: 1.25rem;
-  background-color: transparent;
-  border: none;
-}
-
-#theme-toggle svg path {
-  fill: var(--watchdog-white);
-}
-
 header h1 {
   font-family: var(--font-heading);
   font-size: 2rem;
