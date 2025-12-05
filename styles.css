@@ -298,6 +298,23 @@ h3 {
   font-size: 1.1rem;
 }
 
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+footer ul li a {
+  background: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
 
 
 /* ///ADD/// medium styles 620px */
