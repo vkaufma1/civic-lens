@@ -203,8 +203,9 @@ body.dark-mode blockq.tagline {
   gap: 1.5rem;
 }
 
-#breaking-news > h2 {
+#breaking-news h2 {
   grid-column: 1 / -1;
+  margin-bottom: 1rem;
 }
 
 
