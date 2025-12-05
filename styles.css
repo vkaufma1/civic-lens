@@ -236,6 +236,40 @@ article video {
   border-top: 6px solid var(--news-flash);
 }
 
+footer {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+
+footer ul{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: var(--watchdog-white);
+  background: var(--news-flash);
+  pad: 0.4rem 0.7rem;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+footer p {
+  color: var(--watchdog-white);
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
 /* ///ADD/// Global Text Styles */
 
 p {
