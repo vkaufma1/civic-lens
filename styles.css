@@ -654,3 +654,13 @@ footer p {
   transition: background-color 0.3s;
 }
 }
+
+main, 
+#breaking-news,
+#featured-articles,
+#newsletter,
+footer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
