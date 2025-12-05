@@ -269,13 +269,17 @@ header h1 {
 .tagline {
   font-family: var(--font-body);
   font-size: 1rem;
-  color: var(--watchdog-white);
+  color: var(--truth-text);
   margin-bottom: 1.5rem;
 }
 
 header .tagline {
   color: var(--watchdog-white);
   margin-bottom: 1rem;
+}
+
+body.dark-mode .tagline {
+  color: var(--watchdog-white);
 }
 
 
