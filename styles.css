@@ -94,13 +94,19 @@ body.dark-mode {
   left: -9999px;
 }
 
-.sr-only:focus {
-  position: static;
+.sr-only:focus-visible {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
   padding: 0.5rem 1rem;
-  margin: 1rem;
   background: var(--blue-bulletin);
   color: var(--watchdog-white);
   border-radius: 0.25rem;
+  z-index: 9999;
+}
+
+.sr-only:focus {
+  outline: none;
 }
 
 /* ///ADD/// Navigation Styles */
