@@ -482,13 +482,9 @@ footer p {
     gap: 1.5rem;
   }
 
-  #breaking-news h2 {
-    grid-column: 1 / -1;
-  }
-
   #featured-articles {
     grid-template-columns: 1fr 1fr;
-    grid-area: 1.5rem;
+    gap: 1.5rem;
   }
 
   #newsletter form {
@@ -551,17 +547,25 @@ footer p {
     margin-top: 0.5rem;
   }
 
-
-  
-
   #featured-articles {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
-  #featured-articles h2 {
-    grid-column: 1 / -1;
+  main, footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
+
+  #newsletter form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+
 }
 
 
@@ -574,31 +578,22 @@ footer p {
     max-width: 1200px;
   }
 
-  #featured-articles {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+  header .header-content, 
+  .main-nav .menu {
+    max-width: 1200px;
   }
 
-  #featured-articles h2 {
-    grid-column: 1 / -1;
-  }
 }
 
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
 
 
-  @media (prefers-color-scheme: dark) {
-    body:not(.light-mode) {
-      background: var(--truth-text);
-      color: var(--watchdog-white);
-    }
-  }
-
-
   @media (prefers-reduced-motion: reduce) {
-    * { transition: none !important;}
+    * { transition-duration: 0ms !important;
+      scroll-behavior: auto !important;
   }
+}
 
   
 
@@ -607,18 +602,37 @@ footer p {
 
   @media (min-width: 920px) {
 
+  .main-nav {
+    padding: 0 1.25rem;
+  }
+
   .menu-button {display: none;}
+
+  #menu-toggle:checked + .menu-button + .menu {
+    display: flex !important;
+  }
+
   .menu {
     display: flex !important;
+    justify-content: flex-start;
     gap: 1rem;
+    padding: 1rem 0;
   }
-  .menu a {
-    background: var(--news-flash);
-    padding: .5rem 1rem;
-    border-radius: .25rem;
-    text-transform: uppercase;
-    font-size: .85rem;
-    font-weight: 700;
+
+  .menu li {
+    margin-bottom: 1;
   }
+}
+
+.menu a {
+  background: var(--news-flash);
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s;
 }
 }
