@@ -299,6 +299,43 @@ a:focus {
 
 /* ///ADD/// medium styles 620px */
 
+@media (min-width: 620px) {
+
+  #featured-articles {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  article {
+    padding: 1.25rem
+  }
+
+  article video {
+    margin-top: 0.75rem
+  }
+
+  form input, 
+  form button {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
 
 /* ///ADD/// large styles 920px */
 
