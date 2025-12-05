@@ -78,7 +78,7 @@ body.dark-mode {
   color: var(--watchdog-white);
 }
 #theme-toggle {
-  position: relative;
+  position: absolute;
   top: 1rem;
   right: 1rem;
   background-color: var(--watchdog-white);
@@ -111,6 +111,7 @@ header {
   padding: 1.5rem 1.25rem 1rem;
   width: 100%;
   position: relative;
+  z-index: 10;
 }
 
 #theme-toggle {
