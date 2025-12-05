@@ -107,7 +107,7 @@ body.dark-mode {
 header {
   background: var(--blue-bulletin);
   color: var(--watchdog-white);
-  padding: 2rem 1.25rem;
+  padding: 2rem 0;
   width: 100%;
   box-sizing: border-box;
 }
