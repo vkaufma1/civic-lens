@@ -280,9 +280,17 @@ body.dark-mode blockq.tagline {
   font-weight: 700;
 }
 
+#newsletter form > div {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
 
-
-
+#newsletter fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
 
 /* ///ADD/// Global Text Styles */
@@ -331,18 +339,30 @@ footer ul li a {
     grid-template-columns: 1fr 1fr;
   }
 
-  #newsletter form > div:first-of-type,
-  #newsletter form > div:nth-of-type(2) {
-    display: inline-block;
-    width: 48%;
+  #newsletter form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
   }
 
-  #newsletter form > div:first-of-type {
-    margin-right: 4%;
+  #newsletter form > div {
+    width: 100%;
+  }
+
+  #newsletter form > div:first-of-type,
+  #newsletter form > div:nth-of-type(2) {
+    grid-column: span 1;
   }
 
   #newsletter fieldset {
+    grid-column: 1 / -1;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem 1.5rem;
+  }
+
+  #newsletter button {
+    grid-column: 1 / -1;
   }
 
 }
