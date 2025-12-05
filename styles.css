@@ -292,11 +292,6 @@ blockquote.tagline {
 
 /* ///ADD/// Global Text Styles */
 
-body {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
 
 h2 {
   font-family: var(--font-heading);
