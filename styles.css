@@ -170,6 +170,7 @@ body {
 
 header {
   width: 100%;
+  max-width: none;
   margin: 0;
   padding: 2rem 1.25rem;
   box-sizing: border-box;
