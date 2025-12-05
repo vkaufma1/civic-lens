@@ -478,6 +478,24 @@ a:focus {
     }
   }
 
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0ms !important;
+      scroll-behavior: auto !important;
+    }
+
+    body, 
+    article, 
+    header, 
+    main, 
+    footer {
+      transition: none !important;
+    }
+  }
+
   
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
