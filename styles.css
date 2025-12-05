@@ -390,10 +390,24 @@ button[type="submit"]:focus {
   opacity: 0.9;
 }
 
+#breaking-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+#breaking-news h2 {
+  grid-column: 1 / -1;
+}
+
 
 /* ///ADD/// medium styles 620px */
 
 @media (min-width: 620px) {
+
+  #breaking-news {
+    grid-template-columns: 1fr 1fr;
+  }
 
   #featured-articles {
     grid-template-columns: 1fr 1fr;
