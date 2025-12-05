@@ -242,8 +242,6 @@ body.dark-mode blockq.tagline {
 }
 
 #featured-articles article {
-  background: var(--watchdog-white);
-  border: 1px solid var(--story-subtitle);
   padding: 1rem;
   border-radius: .3rem;
   box-shadow: var(--shadow);
