@@ -427,6 +427,58 @@ a:focus {
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
 
+  @media (prefers-color-scheme: light) {
+
+    body {
+      background-color: var(--watchdog-white);
+      color: var(--truth-text);
+    }
+
+    header, main, footer {
+      background-color: var(--watchdog-white);
+    }
+
+    article {
+      background-color: var(--watchdog-white);
+      border-color: var(--story-subtitle);
+    }
+
+    .menu a {
+      color: var(--watchdog-white);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--truth-text);
+      color: var(--watchdog-white);
+    }
+
+    header, main, footer {
+      background-color: var(--truth-text);
+    }
+
+    .tagline {
+      color: var(--watchdog-white);
+      opacity: 0.85;
+    }
+
+    article {
+      background-color: var(--truth-text);
+      border-color: var(--story-subtitle);
+    }
+
+    article p, 
+    article h3 {
+      color: var(--watchdog-white);
+    }
+
+    .menu a {
+      color:  var(--watchdog-white);
+    }
+  }
+
+  
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
