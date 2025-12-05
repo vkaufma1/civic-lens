@@ -97,6 +97,7 @@ body.dark-mode {
 .sr-only:focus {
   position: static;
   padding: 0.5rem 1rem;
+  margin: 1rem;
   background: var(--blue-bulletin);
   color: var(--watchdog-white);
   border-radius: 0.25rem;
@@ -540,11 +541,6 @@ footer p {
     margin-left: 1rem;
     flex-grow: 1;
     text-align: left;
-  }
-
-  #theme-toggle {
-    position: static;
-    margin-top: 0.5rem;
   }
 
   #featured-articles {
