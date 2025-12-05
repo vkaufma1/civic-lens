@@ -193,6 +193,8 @@ blockquote.tagline {
 
 
 #breaking-news article {
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   border-radius: 0;
   background-color: var(--news-flash);
@@ -208,6 +210,8 @@ blockquote.tagline {
 
 #breaking-news video {
   width: 100%;
+  height: auto;
+  display: block;
   border-radius: 0.25rem;
 }
 
@@ -319,7 +323,10 @@ body.dark-mode blockquote.tagline {
 @media (min-width: 620px) {
 
   #breaking-news {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: start;
   }
 
   #featured-articles {
