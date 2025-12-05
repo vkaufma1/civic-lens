@@ -671,4 +671,7 @@ body {
   top: 1rem !important;
   right: 1.25rem !important;
   margin: 0 !important;
+  z-index: 9999 !important;
+  background: transparent !important;
+  border: none !important;
 }
