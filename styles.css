@@ -387,10 +387,6 @@ footer ul li a {
 
 @media (min-width: 920px) {
 
-  header {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
 
   main, footer {
     max-width: 1100px;
@@ -412,9 +408,6 @@ footer ul li a {
 
 @media (min-width: 1024px) {
 
-  header {
-    max-width: 1200px;
-  }
 
   main, footer {
     max-width: 1200px;
