@@ -269,7 +269,7 @@ header h1 {
 .tagline {
   font-family: var(--font-body);
   font-size: 1rem;
-  color: var(--story-subtitle);
+  color: var(--watchdog-white);
   margin-bottom: 1.5rem;
 }
 
