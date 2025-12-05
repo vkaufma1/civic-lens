@@ -419,7 +419,9 @@ button[type="submit"]:focus {
   }
 
   #featured-articles {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   h1 {
