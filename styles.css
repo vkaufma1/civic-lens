@@ -436,9 +436,7 @@ button[type="submit"]:focus {
 
 @media (min-width: 920px) {
 
-  .mobile-nav {
-    align-self: stretch;
-  }
+ 
 
   header {
     background-color: var(--blue-bulletin);
