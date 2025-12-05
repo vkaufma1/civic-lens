@@ -295,6 +295,10 @@ body.dark-mode .tagline {
   color: var(--watchdog-white);
 }
 
+blockquote.tagline {
+  text-align: center;
+  display: block;
+}
 
 h2 {
   font-family: var(--font-heading);
@@ -487,7 +491,6 @@ button[type="submit"]:focus {
     margin: 0 auto;
     width: 100%;
   }
-
 
   #featured-articles {
     grid-template-columns: repeat(3, 1fr);
