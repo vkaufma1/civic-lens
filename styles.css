@@ -410,11 +410,6 @@ a:focus {
     margin-top: -0.5rem;
   }
 
-  body {
-    display: flex;
-    justify-content: center;
-  }
-
   main, header, footer {
     width: 100%;
     max-width: 1100px;
