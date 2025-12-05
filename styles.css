@@ -344,6 +344,53 @@ a:focus {
   text-decoration: underline;
 }
 
+form div,
+form fieldset {
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  border: 1px solid var(--story-subtitle);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+legend {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--story-subtitle);
+  font-family: var(--font-body);
+}
+
+button[type="submit"] {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover, 
+button[type="submit"]:focus {
+  opacity: 0.9;
+}
+
 
 /* ///ADD/// medium styles 620px */
 
