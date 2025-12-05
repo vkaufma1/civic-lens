@@ -180,6 +180,8 @@ header .tagline {
 /* ///ADD/// Global Layout Styles */
 
 body {
+  background-color: var(--watchdog-white);
+  color: var(--truth-text);
   font-family: var(--font-body);
   line-height: 1.6;
   padding-bottom: 0;
@@ -230,7 +232,7 @@ body.dark-mode blockquote.tagline {
   display: flex;
   flex-direction: column;
   padding: 1.25rem;
-  border-radius: 0.4;
+  border-radius: 0.4rem;
   background-color: var(--news-flash);
   color: var(--watchdog-white);
   box-shadow: var(--shadow);
