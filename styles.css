@@ -236,6 +236,10 @@ body.dark-mode blockq.tagline {
   gap: 1.25rem;
 }
 
+#featured-articles h2{
+  grid-column: 1 / -1;
+}
+
 #featured-articles article {
   background: var(--watchdog-white);
   border: 1px solid var(--story-subtitle);
@@ -363,6 +367,11 @@ footer ul li a {
 
   #featured-articles {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  #featured-articles h2 {
+    grid-column: 1 / -1;
   }
 }
 
@@ -380,7 +389,12 @@ footer ul li a {
   }
 
   #featured-articles {
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+  }
+
+  #featured-articles h2 {
+    grid-column: 1 / -1;
   }
 }
 
