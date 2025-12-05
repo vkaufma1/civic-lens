@@ -413,7 +413,9 @@ button[type="submit"]:focus {
 @media (min-width: 620px) {
 
   #breaking-news {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
   #featured-articles {
