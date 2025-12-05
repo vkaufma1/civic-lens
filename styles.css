@@ -339,6 +339,53 @@ a:focus {
 
 /* ///ADD/// large styles 920px */
 
+@media (min-width: 920px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  main, header, footer {
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  #featured-articles {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  section {
+    margin-bottom: 3.5rem;
+  }
+
+  article {
+    padding: 1.5rem;
+  }
+
+  form {
+    max-width: 500px;
+  }
+
+  form input, 
+  form button {
+    width: 100%;
+  }
+}
+
 
 /* ///ADD/// x-large styles 1024px */
 
